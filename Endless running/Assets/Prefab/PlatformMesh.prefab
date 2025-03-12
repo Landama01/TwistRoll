@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2200851345074174689}
   - component: {fileID: 5514513171377539667}
   - component: {fileID: 7538277228299106803}
+  - component: {fileID: -6275307401069610914}
   m_Layer: 0
   m_Name: PlatformMesh
   m_TagString: Platform
@@ -154,4 +155,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d393ce4ca9ec6454187fbb910fa78093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePlat: {fileID: 0}
+  Click_Drag: {fileID: 0}
+--- !u!114 &-6275307401069610914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8340815786963023521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dba83e296aa3d2458d7c5f3350b77b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

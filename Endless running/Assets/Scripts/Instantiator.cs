@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Instantiator : MonoBehaviour
@@ -40,6 +41,14 @@ public class Instantiator : MonoBehaviour
 
 
             }                       
+        }
+    }
+
+    void Update()
+    {
+        if (GlobalVariables.playerDead)
+        {
+            Position.z = 50;
         }
     }
 

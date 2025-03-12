@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6504248925824053923}
   - component: {fileID: 5693241643779531056}
   - component: {fileID: 2498357199848500286}
+  - component: {fileID: 82459317550484850}
   m_Layer: 0
   m_Name: HoleMesh
   m_TagString: Platform
@@ -155,3 +156,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Click_Drag: {fileID: 0}
+--- !u!114 &82459317550484850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268874269783859469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dba83e296aa3d2458d7c5f3350b77b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

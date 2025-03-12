@@ -18,17 +18,28 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        if (!GlobalVariables.playerDead)
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
-        RaycastHit hit;
-        if(Physics.Raycast(transform.position, Vector3.down, out hit, CastDistance))
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, CastDistance))
+            {
+                rb.useGravity = false;
+                rb.velocity = Vector3.zero;
+            }
+            else
+            {
+                rb.useGravity = true;
+            }
+        }        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("FallingLimit") || other.CompareTag("Enemy"))
         {
-            rb.useGravity = false;
-            rb.velocity = Vector3.zero;
-        }
-        else
-        {
-            rb.useGravity = true;
+            GlobalVariables.playerDead = true;
         }
     }
 }
