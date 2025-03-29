@@ -39,6 +39,10 @@ public class ClickAndRotate : MonoBehaviour
 
         if (isDragging)
         {
+            if (!GlobalVariables.Running)
+            {
+                GlobalVariables.Running = true;
+            }
             deltaX = Input.mousePosition.x - lastMouseX;           
         }
     }

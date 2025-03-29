@@ -41,7 +41,14 @@ public class ResetGame : MonoBehaviour
 
                 for (int i = 1; i <= StartPlatforms; i++)
                 {
-                    randomNum = Random.Range(0, 3);
+                    if (!GlobalVariables.Running)
+                    {
+                        randomNum = 0;
+                    }
+                    else if (GlobalVariables.Running)
+                    {
+                        randomNum = Random.Range(1, 3);
+                    }
                     switch (randomNum)
                     {
                         case 0:

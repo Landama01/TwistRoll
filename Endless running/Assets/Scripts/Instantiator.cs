@@ -23,7 +23,15 @@ public class Instantiator : MonoBehaviour
         Position.y = 2.15f;
         for (int i = 1; i <= StartPlatforms; i++)
         {
-            randomNum = Random.Range(0, 3);
+            if (!GlobalVariables.Running)
+            {
+                randomNum = 0;
+            }
+            else if (GlobalVariables.Running)
+            {
+                randomNum = Random.Range(0, 2);
+            }
+            
             switch(randomNum)
             {
                 case 0:
@@ -56,7 +64,14 @@ public class Instantiator : MonoBehaviour
     {
         if (other.CompareTag("Platform"))
         {
-            randomNum = Random.Range(1, 2);
+            if (!GlobalVariables.Running)
+            {
+                randomNum = 0;
+            }
+            else if (GlobalVariables.Running)
+            {
+                randomNum = Random.Range(1, 2);
+            }
             switch (randomNum)
             {
                 case 0:

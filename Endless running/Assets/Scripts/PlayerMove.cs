@@ -39,6 +39,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (other.CompareTag("FallingLimit") || other.CompareTag("Enemy"))
         {
+            GlobalVariables.Running = false;
             GlobalVariables.playerDead = true;
         }
     }
