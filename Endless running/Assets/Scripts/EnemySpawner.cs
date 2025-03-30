@@ -15,7 +15,6 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(MaxSpawnRange);
         if (GlobalVariables.Score % 20 == 0 && MaxSpawnRange >= 3) 
         {
             if (!ScoreCheck)
