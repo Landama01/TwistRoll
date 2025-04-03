@@ -43,7 +43,7 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemy()
     {
         int randomDistance = Random.Range(8, 16) * 5;
-        int randomRotation = Random.Range(4, 10) * 5;
+        int randomRotation = Random.Range(0, 37) * 5;
         GameObject newEnemy = Instantiate(enemyPrefab, transform);
         newEnemy.transform.localPosition = new Vector3(0, 0, player.position.z + randomDistance);
         newEnemy.transform.rotation = Quaternion.Euler(0, 0, randomRotation);

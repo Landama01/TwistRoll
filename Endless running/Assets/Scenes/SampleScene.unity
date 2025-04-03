@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f689e9d578771b14f968b4f3dc30a1c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectablePrefab: {fileID: 9137078723110367034, guid: f2377fa98cdabec4f9db0e4c43b50640, type: 3}
+  collectablePrefab: {fileID: 7435074698612621540, guid: 4827dff2a41b86b44b2916964fc7f1c8, type: 3}
   player: {fileID: 252636940}
   SpawnDistance: 10
 --- !u!4 &362232222
@@ -709,7 +709,7 @@ Transform:
   m_GameObject: {fileID: 362232220}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.550636, y: 32.13072, z: -0.89543784}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
