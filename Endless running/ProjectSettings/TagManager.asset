@@ -9,6 +9,7 @@ TagManager:
   - EnemyWall
   - EnemyPivot
   - FallingLimit
+  - Collectable
   layers:
   - Default
   - TransparentFX
